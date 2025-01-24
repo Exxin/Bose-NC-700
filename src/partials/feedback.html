@@ -1,0 +1,62 @@
+<section class="feedback" >
+  <div class="feedback-center container" id="feedback">
+    <div class="feedback-img">
+      <picture>
+        <source
+          srcset="./images/images-desk/headphones-white-bg.jpg"
+          media="(min-width:1440px)"
+        />
+        <source
+          srcset="./images/images-tab/headphones-white-bg.jpg"
+          media="(min-width: 768px)"
+        />
+
+        <img
+          src="./images/images-mob/headphones-white-bg.jpg"
+          alt="creators-img"
+        />
+      </picture>
+    </div>
+    <div class="feedback-main-center">
+      <div class="feedback-content">
+        <h2 class="feedback-title">Feedback</h2>
+        <p class="feedback-text">
+          We'll help you find the right headphones for you.
+        </p>
+      </div>
+      <form class="feedback-form">
+        <input
+          type="text"
+          name="username"
+          placeholder="Your name"
+          class="name"
+          onblur="valid(this)"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your e-mail"
+          class="e-mail"
+          onblur="valid(this)"
+        />
+        <textarea placeholder="Send us a message" class="message"></textarea>
+        <div class="checkbox-center">
+          <input type="checkbox" name="" id="check" class="checkboxa" />
+          <label for="check" class="label">
+            <div class="div">
+              <svg width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-icon"></use>
+              </svg>
+            </div>
+          </label>
+          <label for="check" class="form-text-label">
+            I agree to the <span class="form-text-span">privacy policy</span>
+          </label>
+        </div>
+        <div class="feedback-button-center">
+          <button type="submit" class="feedback-button">send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

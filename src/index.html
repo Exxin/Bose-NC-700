@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Bose NC 700</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./font/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="./images/icon-tab.jpg" />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <load src="./partials/header.html"/>
 
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+      <load src="./partials/hero.html"/>
+      <load src="./partials/premium.html"/>
+      <load src="./partials/capable.html"/>
     </main>
 
-    <load src="./partials/footer.html" />
+    <!-- <load src="./partials/footer.html" /> -->
 
     <script type="module" src="./main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="accordion.js"></script>
+    <script src="burger-menu.js"></script>
+
+    <script src="input.js"></script>
+
+    <script src="slider.js"></script>
   </body>
 </html>

@@ -1,0 +1,125 @@
+
+.guarantees_section{
+    background: #191919;
+    display: flex;
+    justify-content: center;
+}
+.guarantees-center{
+    padding-left: 18px;
+display: flex;
+flex-direction: column-reverse;
+}
+.img-ceneter{
+
+}
+.guarantees-content{
+display: flex;
+flex-direction: column;
+justify-content: start;
+}
+.guarantees-title{
+    color: #E7E7E7;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%; /* 28.8px */
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    padding-top: 52px;
+    margin-bottom: 32px;
+}
+.guarantees-list{
+
+}
+.guarantees-item{
+width: 280px;
+}
+.guarantees-item::before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #DF3D3A;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+.guarantees-subtitle{
+    color: #E7E7E7;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 125%; /* 25px */
+    width: 152px;
+    margin-bottom: 16px;
+}
+.guarantees-text{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 125%; /* 17.5px */
+}
+@media screen and (min-width: 320px) {
+  
+}
+@media screen and (min-width: 768px) {
+ .guarantees-center{
+    flex-direction: row;
+ }
+ 
+ .guarantees-title{
+    letter-spacing: 0.6px;
+    font-size: 30px;
+    padding-top: 100px;
+ }
+ .guarantees-subtitle{
+    width: 289px;
+ }
+ .guarantees-text{
+    width: 252px;
+    font-size: 16px;
+    line-height: 145%; /* 23.2px */
+ }
+ .img-ceneter{
+    padding-top: 95px;
+    margin-right: 60px;
+ }
+}
+@media screen and (min-width: 1440px) {
+.guarantees-center{
+    width: 1440px;
+}
+.guarantees_section{
+    background-image: url(../images/images-desk/line.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+.guarantees-title{
+    letter-spacing: 1.08px;
+    font-size: 54px;
+    padding-top: 195px;
+    margin-bottom: 60px;
+}
+.guarantees-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 69px;
+    padding-bottom: 19px;
+}
+.guarantees-subtitle{
+    font-size: 28px;
+    line-height: 125%; /* 35px */
+    width: 405px;
+    margin-bottom: 20px;
+}
+.img-ceneter{
+    padding-top: 215px;
+    margin-right: 150px;
+}
+.guarantees-text{
+    font-size: 20px;
+    width: 400px;
+}
+}

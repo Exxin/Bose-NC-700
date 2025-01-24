@@ -1,0 +1,12 @@
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.panel {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "Bose-NC-700",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/Bose-NC-700/",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -18,6 +18,17 @@
   "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.2.0",
-    "vite-plugin-html-inject": "^1.1.2"
+    "vite-plugin-html-inject": "^1.1.2",
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "autoprefixer": "^10.4.20",
+    "fast-glob": "^3.3.1",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0",
+    "postcss-sort-media-queries": "^5.2.0",
+    "sass": "^1.68.0",
+    "sharp": "^0.32.6",
+    "svgo": "^3.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-image-optimizer": "^1.1.7"
   }
 }

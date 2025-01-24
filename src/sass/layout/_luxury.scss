@@ -1,0 +1,127 @@
+.luxury_section {
+  display: flex;
+  justify-content: center;
+  padding-top: 52px;
+  background-color: #191919;
+}
+.center-luxury-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // padding-left: 18px;
+  // padding-right: 16px;
+}
+.luxury-title {
+  color: #e7e7e7;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  width: 278px;
+  padding-top: 52px;
+  margin-bottom: 32px;
+}
+
+.luxury-list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+}
+.luxury-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.luxury-subtitle {
+  color: #e7e7e7;
+  font-family: Gilroy;
+  font-size: 20px;
+
+  font-weight: 600;
+  line-height: 125%; /* 25px */
+  margin-bottom: 16px;
+}
+.luxury-subtitle:nth-child(1) {
+  margin-top: 32px;
+}
+.luxury-subtitle:nth-child(2) {
+  margin-top: 42px;
+}
+
+.luxury-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 125%; /* 17.5px */
+}
+
+.luxury-img-div {
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) {
+}
+
+@media screen and (min-width: 768px) {
+  .luxury_section {
+    padding-top: 100px;
+  }
+  .luxury-img-div {
+    margin-right: 0px;
+    padding-right: 0;
+  }
+  .luxury-title {
+    letter-spacing: 0.6px;
+    font-size: 30px;
+    width: 348px;
+  }
+  .luxury-list {
+    flex-direction: row;
+    column-gap: 60px;
+  }
+  .luxury-item {
+    width: 285px;
+  }
+
+  .luxury-title-center {
+    padding-left: 361px;
+  }
+  .luxury-text {
+    font-size: 16px;
+    line-height: 145%; /* 23.2px */
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .luxury_section {
+    padding-top: 170px;
+  }
+  .luxury-title {
+    font-size: 54px;
+    letter-spacing: 1.08px;
+    width: 625px;
+    margin-bottom: 50px;
+  }
+  .luxury-img-div {
+  }
+  .luxury-subtitle {
+    font-size: 28px;
+  }
+  .luxury-text {
+    font-size: 20px;
+  }
+  .luxury-list {
+    column-gap: 40px;
+  }
+  .luxury-item {
+    width: 500px;
+  }
+  .luxury-title-center {
+    padding-left: 736px;
+  }
+}
