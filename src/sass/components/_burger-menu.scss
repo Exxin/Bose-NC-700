@@ -4,6 +4,8 @@
   position: relative;
   z-index: 2;
   overflow: hidden;
+  cursor: pointer;
+  filter:drop-shadow(0px 0px 7px rgba(216, 216, 216, 0.795));
 }
 .menu-btn span {
   width: 18px;
@@ -22,6 +24,9 @@
 .menu-btn span:nth-of-type(3) {
   top: calc(50% + 5px);
 }
+// .menu-btn:hover span:nth-of-type(1) {
+//   width: 12px;
+// }
 .menu {
   display: flex;
   justify-content: center;
@@ -33,10 +38,16 @@
   padding-top: 100px;
   padding-left: 20px;
   background: #191919;
+  backdrop-filter: blur(10px);
   transform: translateY(-150%);
   transition: transform 0.5s;
   z-index: 1;
 }
+
+::-webkit-backdrop-filter{
+  backdrop-filter: blur(10px);
+}
+
 .menu.active {
   transform: translateY(0);
 }
@@ -45,7 +56,8 @@
 }
 
 .menu-btn.active span:nth-of-type(1) {
-  display: none;
+  // display: none;
+  width: 0px;
 }
 .menu-btn.active span:nth-of-type(2) {
   top: 50%;

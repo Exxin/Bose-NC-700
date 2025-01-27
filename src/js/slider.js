@@ -22,7 +22,7 @@ function nextSlide() {
   }
 }
 
-setInterval(nextSlide, 5000);
+// setInterval(nextSlide, 50000);
 
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#bose__slider', {
