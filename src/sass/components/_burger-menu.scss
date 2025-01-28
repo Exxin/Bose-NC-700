@@ -6,6 +6,10 @@
   overflow: hidden;
   cursor: pointer;
   filter:drop-shadow(0px 0px 7px rgba(216, 216, 216, 0.795));
+  transition: all 0.5s;
+  &:hover{
+    filter:drop-shadow(0px 0px 2px rgb(216, 216, 216));
+  }
 }
 .menu-btn span {
   width: 18px;
@@ -80,6 +84,11 @@
   }
   .menu__nav {
     width: 610px;
+  }
+
+  .menu-btn.active span:nth-of-type(1) {
+    // display: none;
+    width: 0px;
   }
 }
 
