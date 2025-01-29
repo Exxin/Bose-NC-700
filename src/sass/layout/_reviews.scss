@@ -202,6 +202,11 @@
       margin: 0 60px;
     }
   }
+  @media screen and (min-width: 1280px) {
+    & {
+      height: calc(120vh - 120px);
+    }
+  }
   @media screen and (min-width: 1440px) {
     & {
       height: calc(100vh - 120px);
@@ -213,11 +218,13 @@
 .swiper-slide {
   overflow: hidden;
   width: 280px;
+  height: 520px;
   display: flex;
   flex-direction: column;
   @media screen and (min-width: 768px) {
     & {
       width: 648px;
+      height: auto;
     }
   }
   @media screen and (min-width: 1440px) {
