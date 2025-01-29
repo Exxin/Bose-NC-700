@@ -1,39 +1,22 @@
-const slider = document.querySelector('.slider');
-let isHovering = false;
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 5,
+  spaceBetween: 0,
+  centeredSlides: true,
+  loop: true,
+  simulateTouch: 'ontouchstart' in window || navigator.maxTouchPoints > 0,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+})
 
-slider.addEventListener('mouseover', () => {
-  isHovering = true;
-});
-
-slider.addEventListener('mouseout', () => {
-  isHovering = false;
-});
-
-function nextSlide() {
-  if (!isHovering) {
-    const firstSlide = slider.children[0];
-    slider.style.transition = 'transform 0.5s ease';
-    slider.style.transform = 'translateX(-100%)';
-    setTimeout(() => {
-      slider.appendChild(firstSlide);
-      slider.style.transition = 'none';
-      slider.style.transform = 'translateX(0)';
-    }, 500);
-  }
+const calculateHeight = () => {
+  const swiperSlideElements = Array.from(document.querySelectorAll('.swiper .swiper-slide'))
+  if (!swiperSlideElements.length) return
+  const width = swiperSlideElements[0].getBoundingClientRect().width
+  const height = Math.round(width / (16 / 9))
+  swiperSlideElements.map(element => element.style.height = `${height}px`)
 }
 
-// setInterval(nextSlide, 50000);
-
-document.addEventListener('DOMContentLoaded', function () {
-  new Splide('#bose__slider', {
-    classes: {
-      arrows: 'splide__arrows bose-arrows__wrap',
-      arrow: 'splide__arrow bose-arrow',
-      prev: 'splide__arrow--prev bose-arrow--prev',
-      next: 'splide__arrow--next bose-arrow--next',
-    },
-    heightRatio: 0.5,
-    pagination: false,
-    rewind: false,
-  }).mount();
-});
+document.addEventListener("DOMContentLoaded", calculateHeight)
+addEventListener('resize', calculateHeight)

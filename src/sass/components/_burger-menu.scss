@@ -11,6 +11,7 @@
     filter:drop-shadow(0px 0px 2px rgb(216, 216, 216));
   }
 }
+
 .menu-btn span {
   width: 18px;
   height: 1px;
@@ -42,14 +43,9 @@
   padding-top: 100px;
   padding-left: 20px;
   background: #191919;
-  backdrop-filter: blur(10px);
   transform: translateY(-150%);
   transition: transform 0.5s;
   z-index: 1;
-}
-
-::-webkit-backdrop-filter{
-  backdrop-filter: blur(10px);
 }
 
 .menu.active {
