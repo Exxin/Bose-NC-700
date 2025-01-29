@@ -245,7 +245,7 @@
   width: 43px;
   height: 26px;
   border-radius: 0%;
-  background: #191919;
+  background: none;
   opacity: 0.2;
   display: flex;
   column-gap: 15px;
@@ -259,7 +259,7 @@
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #191919;
+  background: none;
 }
 .swiper-pagination-bullet:last-child svg {
   visibility: hidden;
