@@ -1,12 +1,13 @@
 
 .reviews {
   background: #191919;
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   justify-content: center;
   display: flex;
   @media screen and (min-width: 768px) {
     & {
-    padding-top: 10px;
+    padding-top: 20px;
     }
   }
   @media screen and (min-width: 1440px) {
