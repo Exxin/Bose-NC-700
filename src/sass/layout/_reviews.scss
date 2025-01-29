@@ -112,7 +112,6 @@
 .reviews__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   @media screen and (min-width: 1440px) {
     & {
       height: 560px;
