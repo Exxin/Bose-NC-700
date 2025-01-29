@@ -23,19 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
-  // const paginationEl = document.querySelector('.swiper-pagination');
-  // if (paginationEl) {
-  //   const fakeBullet = document.createElement('li');
-  //   fakeBullet.className = 'swiper-pagination-bullet fake-bullet';
-  //   fakeBullet.innerHTML = `
-  //     <li class="${className}">04
-  //       <svg width="5" height="25" class="reviews__svg actives">
-  //         <use href="./images/symbol-defs.svg#icon-dashes"></use>
-  //       </svg>
-  //     </li>`;
-  //   paginationEl.appendChild(fakeBullet);
-  // }
-
   const calculateHeight = () => {
     const swiperSlideElements = Array.from(document.querySelectorAll('.swiper .swiper-slide'))
     if (!swiperSlideElements.length) return
