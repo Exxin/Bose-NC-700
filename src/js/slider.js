@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
   var mySwiper = new Swiper('.swiper-container', {
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true, // Плавний перехід між слайдами
+    },
+    grabCursor: true,
     centeredSlides: true,
     loop: true,
     simulateTouch: 'ontouchstart' in window || navigator.maxTouchPoints > 0,
@@ -15,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return `
           <li class="${className}">
             ${formattedIndex}
-            <svg width="5" height="25" class="reviews__svg">
+            <svg width="5" height="25" class="reviews__svg actives">
               <use href="./images/symbol-defs.svg#icon-dashes"></use>
             </svg>
           </li>`;
@@ -28,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!swiperSlideElements.length) return
     const width = swiperSlideElements[0].getBoundingClientRect().width
     const height = Math.round(width / (16 / 9))
-    swiperSlideElements.map(element => element.style.height = `${height}px`)
+    swiperSlideElements.forEach(element => element.style.height = `${height}px`)
   }
 
   calculateHeight();
