@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return `
           <li class="${className}">
             ${formattedIndex}
-            <svg width="5" height="25" class="reviews__svg actives">
+            <svg width="5" height="25" class="reviews__svg">
               <use href="./images/symbol-defs.svg#icon-dashes"></use>
             </svg>
           </li>`;
