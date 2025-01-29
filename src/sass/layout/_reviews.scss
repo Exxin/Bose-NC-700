@@ -1,12 +1,12 @@
 .reviews {
   background: #191919;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 40px;
   justify-content: center;
   display: flex;
   @media screen and (min-width: 768px) {
     & {
-      padding-top: 20px;
+      padding-top: 30px;
     }
   }
   @media screen and (min-width: 1440px) {
@@ -188,9 +188,9 @@
 //swiper
 
 .swiper-container {
-  height: calc(80vh - 120px);
+  height: 535px;
   margin: 0 0px;
-  position: relative;
+  position: static;
   overflow: hidden;
   list-style: none;
   padding: 0;
