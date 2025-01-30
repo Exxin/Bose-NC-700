@@ -1,0 +1,15 @@
+@use 'sass:map';
+@use 'variables' as var;
+
+@function get-color($key) {
+  @return map.get(var.$colors, $key);
+}
+/* fn.get-color('dark-primary') */
+
+@function get-color-with-opacity($key, $opacity) {
+  $colors: get-color($key);
+  @return rgba($colors, $opacity);
+}
+/* fn.get-color-with-opacity('dark-primary', 0.5) */
+
+@debug get-color('light-primary')

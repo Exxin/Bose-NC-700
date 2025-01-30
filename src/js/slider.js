@@ -36,7 +36,3 @@ document.addEventListener('DOMContentLoaded', function () {
   calculateHeight();
   window.addEventListener('resize', calculateHeight);
 });
-
-/*           <svg width="5" height="25" class="reviews__svg">
-<use href="./images/symbol-defs.svg#icon-dashes"></use>
-</svg> */
