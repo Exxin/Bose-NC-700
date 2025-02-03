@@ -1,3 +1,5 @@
+@use "../utils/functions" as fn;
+
 .reviews {
   background: #191919;
   padding-top: 40px;
@@ -167,4 +169,38 @@
 .reviews__item {
   display: flex;
   column-gap: 20px;
+}
+
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+
+.reviews__video {
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: fn.get-color('red');
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.play-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 16px solid fn.get-color('light-primary');
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
 }

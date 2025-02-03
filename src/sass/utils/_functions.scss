@@ -1,15 +1,21 @@
 @use 'sass:map';
+@use 'sass:color';
 @use 'variables' as var;
 
 @function get-color($key) {
   @return map.get(var.$colors, $key);
 }
-/* fn.get-color('dark-primary') */
+// Використання функції fn.get-color('dark-primary') поверне #191919
 
 @function get-color-with-opacity($key, $opacity) {
   $colors: get-color($key);
   @return rgba($colors, $opacity);
 }
-/* fn.get-color-with-opacity('dark-primary', 0.5) */
+// Вимкористання функції fn.get-color-with-opacity('dark-primary', 0.5) поверне rgba(25, 25, 25, 0.5)
 
-@debug get-color('light-primary')
+@function hex-to-rgba($hex, $alpha) {
+  $rgb: color.scale(color.change($hex, $alpha: $alpha), $alpha: $alpha);
+  @return rgba(color.red($rgb), color.green($rgb), color.blue($rgb), $alpha);
+}
+
+// @debug get-color('light-primary')

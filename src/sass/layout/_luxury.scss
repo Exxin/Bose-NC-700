@@ -1,17 +1,16 @@
+@use "../utils/functions" as fn;
+
 .luxury_section {
   display: flex;
   justify-content: center;
   padding-top: 52px;
-  background-color: #191919;
+  background-color: fn.get-color('dark-primary');
 }
 .center-luxury-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  // padding-left: 18px;
-  // padding-right: 16px;
 }
 .luxury-title {
   color: #e7e7e7;

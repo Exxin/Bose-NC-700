@@ -12,7 +12,6 @@
     }
   }
 }
-
 .faq__wrap {
   display: flex;
   flex-direction: column;
@@ -30,7 +29,6 @@
     }
   }
 }
-
 .faq__title {
   margin-bottom: 34px;
   color: #e7e7e7;
@@ -52,12 +50,11 @@
     }
   }
 }
-
 .faq__wrapper {
   padding-bottom: 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: max-height 0.2s ease-out;
 }
-
 .faq__button {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
@@ -96,16 +93,14 @@
     }
   }
 }
-
 .panel {
   padding-left: 41px;
   margin-top: 16px;
+  transition: all 0.3s;
 }
-
 .faq__wraps {
   display: flex;
 }
-
 .faq__subtitle {
   color: rgba(255, 255, 255, 0.8);
   font-size: 20px;

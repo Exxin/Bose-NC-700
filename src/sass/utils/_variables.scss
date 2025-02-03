@@ -1,11 +1,3 @@
-$breakpoints: (
-    'sm': 375px,
-    'md': 768px,
-    'lg': 1200px,
-    'xl': 1440px,
-    'xxl': 1920px,
-);
-
 $colors: (
     'dark': #000000,
     'dark-primary': #191919,
@@ -13,6 +5,21 @@ $colors: (
     'red-dark': #B5302D,
     'white': #FFFFFF,
     'light-primary': #E7E7E7,
+);
+/* Використання функції
+  fn.get-color('dark-primary')
+  поверне #191919
+*/
+/* Вимкористання функції
+  fn.get-color-with-opacity('dark-primary', 0.5)
+  поверне rgba(25, 25, 25, 0.5)
+*/
+$breakpoints: (
+    'sm': 375px,
+    'md': 768px,
+    'lg': 1200px,
+    'xl': 1440px,
+    'xxl': 1920px,
 );
 
 $font-sizes: (
