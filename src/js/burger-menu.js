@@ -16,3 +16,10 @@ menuLinks.forEach(link => {
     btnMenuMob.classList.remove('active');
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var cubes = document.querySelector('.cubes');
+  var speed = 10; // Швидкість анімації в секундах
+
+  cubes.style.animationDuration = speed + 's';
+});
